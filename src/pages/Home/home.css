@@ -1,6 +1,19 @@
+.container{
+
+  
+
+}
+
+
 .lista-filmes{
-    max-width: 800px;
-    margin: 14px auto;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    background-image: linear-gradient(to bottom, #0B1558, #063A6A, #09101D, #093521, #301D26, #761427);
+    background-attachment: fixed;
   }
   
   .loading{
@@ -11,10 +24,17 @@
   }
 
   .lista-filmes article{
-    width: 100%;
+    width: 400px;
+    height: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
     background-color: #FFF;
-    padding: 15px;
-    border-radius: 4px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   
   .lista-filmes strong{
@@ -25,24 +45,28 @@
   }
   
   .lista-filmes img{
-    width: 900px;
+    width: 400px;
     max-width: 100%;
     max-height: 340px;
-    object-fit: cover;
-    display: block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    /* object-fit: cover; */
+    display: block; 
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
   }
   
   .lista-filmes a{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     padding: 10px 0;
     font-size: 24px;
     background-color: #116FEB;
     text-decoration: none;
     color: #FFF;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .lista-filmes a:hover{
+    background-color: black;
   }

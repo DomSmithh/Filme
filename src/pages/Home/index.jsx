@@ -9,13 +9,13 @@ function Home() {
         async function loadFilmes(){
             const response = await api.get("movie/now_playing", {
                 params:{
-                    api_key:"8090e5ce894011bc532fd0e49a9fa889",
+                    api_key:"4e6f5002f3c257f279dba8fbb03eb6c4",
                     language:"pt-BR",
                     page:1,
                 }
             })
             //console.log(response.data.results.slice(0,10));
-            setFilmes(response.data.results.slice(0,10))
+            setFilmes(response.data.results.slice(0,15))
         }
         loadFilmes();
     }, [])
