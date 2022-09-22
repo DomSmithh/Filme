@@ -42,15 +42,13 @@ function Filmes() {
             <h1>{filme.title}</h1>
             <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title} />
             <h3>Sinopse</h3>
-            <span>{filme.over0view}</span>
-            <h3>Data de Lançamento</h3>
+            <span className='span1' >{filme.overview}</span>
+            <h3 className='data'>Data de Lançamento</h3>
             <span>{filme.release_date}</span>
-            <br />
             <strong className='avaliacao'>Avaliação: {filme.vote_average} /10</strong>
             <div className='area-buttons'>
                 <button>Salvar</button>
-                <button><a href='#'>Trailer</a></button>
-
+                <button>Trailer</button>
             </div>
         </div>
     );
